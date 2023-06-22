@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Project-tracking-intro-component-master--React-Tailwind/static/css/main.7d4e4834.css",
+    "main.js": "/Project-tracking-intro-component-master--React-Tailwind/static/js/main.f38a8564.js",
+    "static/media/illustration-devices.svg": "/Project-tracking-intro-component-master--React-Tailwind/static/media/illustration-devices.30f970328fa296377766.svg",
+    "index.html": "/Project-tracking-intro-component-master--React-Tailwind/index.html",
+    "main.7d4e4834.css.map": "/Project-tracking-intro-component-master--React-Tailwind/static/css/main.7d4e4834.css.map",
+    "main.f38a8564.js.map": "/Project-tracking-intro-component-master--React-Tailwind/static/js/main.f38a8564.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d4e4834.css",
+    "static/js/main.f38a8564.js"
+  ]
+}
