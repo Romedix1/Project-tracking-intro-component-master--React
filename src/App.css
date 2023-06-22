@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+/*
+    font-family: 'Barlow Condensed', sans-serif; 
+    400, 700
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+/* 
+    font-family: 'Barlow', sans-serif;
+    400
+*/
+
+
+*
+{
+    --Red: rgb(255, 92, 92);
+    --VeryDarkBlue: hsl(230, 29%, 20%);
+    --DarkGrayishBlue: hsl(230, 11%, 40%);
+    --GrayishBlue: hsl(235, 7%, 65%);
+    --LightGrayishBlue: hsl(207, 33%, 95%);
+
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+
+}
+
+#root
+{
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+@keyframes showNavMenu {
+    0% { height: 0px; }
+    100% { height: 233px; }
+}
+
+.nav--opened-menu
+{
+    font-family: 'Barlow Condensed', sans-serif; 
+    background-color: #fff;
+    animation: showNavMenu linear 0.4s;
+    overflow-y: hidden;
+}
+
+
+
+.nav--opened-menu-button
+{
+    font-family: 'Barlow Condensed', sans-serif; 
+    color: var(--GrayishBlue);
+}
+
+.nav--opened-menu-button:hover
+{
+    border-color: var(--GrayishBlue);
+}
+
+.hero-section
+{
+    width: 100vw;
+    background-image: url(../public/images/illustration-devices.svg);
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: top 50px right -105px;
+}
+
+.hero--img
+{
+    width: 470px;
+}
+
+.hero--right-background
+{
+    background-color: var(--LightGrayishBlue);
+}
+
+.hero--new
+{
+    background-color: var(--VeryDarkBlue);
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif; 
+}
+
+.hero--title
+{
+    color: var(--GrayishBlue);
+    font-family: 'Barlow Condensed', sans-serif; 
+}
+
+.hero--header
+{
+    font-family: 'Barlow Condensed', sans-serif; 
+    color: var(--VeryDarkBlue);
+}
+
+.hero--bottom-text
+{
+    font-family: 'Barlow', sans-serif;
+    color: var(--DarkGrayishBlue);
+}
+
+.hero--bottom-button
+{
+    background-color: var(--Red);
+    color: #fff;
+    font-family: 'Barlow Condensed', sans-serif; 
+}
+
+.hero--bottom-button:hover
+{
+    background-color: rgb(255, 92, 92, .7);
+}
+
+.hero--bottom-paragraph
+{
+    font-family: 'Barlow Condensed', sans-serif; 
+    color: var(--GrayishBlue);
+}
+
+@media (min-width: 580px) {
+    .hero-section
+    {
+        background-size: 550px;
+        background-position: top 0px right -105px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-section
+    {
+        background-size: 750px;
+        background-position: top 30px right -105px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .hero-section
+    {
+        background-size: 850px;
+        background-position: top 30px right -105px;
+    }
+}
